@@ -2,40 +2,35 @@
 <html lang="en">
 <head>
 	<title>Thinkful Tube Project</title>
-	<script
-  	src="https://code.jquery.com/jquery-3.3.1.min.js"
-  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  	crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
 
-	<header role="banner">Thinkful Tube</header>
+  <header role="banner"><h1>Thinkful Tube</h1></header>
 
 	<main role="main">
-		<div class="row">
-			<div class="col-12">
 				<div class="searchContainer">
 					<form action="#" class="js-search">
-						<label for="query"></label>
-						<input type="text" name="js-query">
-						<button type="submit">Submit</button>
+						<label for="js-query">
+						<input id="js-query" class="textInput" type="text" aria-label="search" name="js-query" placeholder="What do you want to watch?"></label>
+						<button type="submit">Search</button>
 					</form>
 				</div>
-			</div>
-		</div>
 	</main>
 
-	<section class="searchResults" role="region">
-		<div class="row">
-			<div class="col-12">
+	<section class="searchResults" role="region" aria-live="assertive" hidden>
+				<h2>Results</h2>
+				<p class="totalResultsDisplay">Total Results: 5</p>
+
 				<div class="js-search-results">
 					
 				</div>
-			</div>
-		</div>
 	</section>
 
+	<script
+  	src="https://code.jquery.com/jquery-3.3.1.min.js"
+  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  	crossorigin="anonymous"></script>
 <script type="text/javascript" src="./index.js"></script>
 </body>
 </html>
